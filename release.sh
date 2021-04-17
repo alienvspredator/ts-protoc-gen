@@ -38,10 +38,10 @@ if [[ "${PKG_VERSION}" = *-pre ]]; then
   die "package.json version (${PKG_VERSION}) must not end with a '-pre' suffix for a production release"
 fi
 
-npm install
-if ! workspace_is_clean; then
-  die "workspace changes detected after npm install; please commit these changes and try again"
-fi
+# npm install
+# if ! workspace_is_clean; then
+#   die "workspace changes detected after npm install; please commit these changes and try again"
+# fi
 
 CHANGELOG_FIRST_LINE=$(head -n 1 CHANGELOG.md)
 if [[ "${CHANGELOG_FIRST_LINE}" != "## ${PKG_VERSION}" ]]; then
