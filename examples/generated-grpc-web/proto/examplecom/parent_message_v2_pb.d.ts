@@ -8,12 +8,12 @@ export class ParentMessageV2 extends jspb.Message {
   hasInternalChildMessage(): boolean;
   clearInternalChildMessage(): void;
   getInternalChildMessage(): ParentMessageV2.InternalChildMessage;
-  setInternalChildMessage(value?: ParentMessageV2.InternalChildMessage): void;
+  setInternalChildMessage(value?: ParentMessageV2.InternalChildMessage): ParentMessageV2;
 
   hasOptInternalChildMessage(): boolean;
   clearOptInternalChildMessage(): void;
   getOptInternalChildMessage(): ParentMessageV2.InternalChildMessage | undefined;
-  setOptInternalChildMessage(value?: ParentMessageV2.InternalChildMessage): void;
+  setOptInternalChildMessage(value?: ParentMessageV2.InternalChildMessage): ParentMessageV2;
 
   clearInternalChildrenList(): void;
   getInternalChildrenList(): Array<ParentMessageV2.InternalChildMessage>;
@@ -23,12 +23,12 @@ export class ParentMessageV2 extends jspb.Message {
   hasExternalChildMessage(): boolean;
   clearExternalChildMessage(): void;
   getExternalChildMessage(): proto_othercom_external_child_message_pb.ExternalChildMessage;
-  setExternalChildMessage(value?: proto_othercom_external_child_message_pb.ExternalChildMessage): void;
+  setExternalChildMessage(value?: proto_othercom_external_child_message_pb.ExternalChildMessage): ParentMessageV2;
 
   hasOptExternalChildMessage(): boolean;
   clearOptExternalChildMessage(): void;
   getOptExternalChildMessage(): proto_othercom_external_child_message_pb.ExternalChildMessage | undefined;
-  setOptExternalChildMessage(value?: proto_othercom_external_child_message_pb.ExternalChildMessage): void;
+  setOptExternalChildMessage(value?: proto_othercom_external_child_message_pb.ExternalChildMessage): ParentMessageV2;
 
   clearExternalChildrenList(): void;
   getExternalChildrenList(): Array<proto_othercom_external_child_message_pb.ExternalChildMessage>;
@@ -59,7 +59,7 @@ export namespace ParentMessageV2 {
     hasMyString(): boolean;
     clearMyString(): void;
     getMyString(): string | undefined;
-    setMyString(value: string): void;
+    setMyString(value: string): InternalChildMessage;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): InternalChildMessage.AsObject;

@@ -6,7 +6,7 @@ import * as proto_othercom_external_enum_pb from "../../proto/othercom/external_
 
 export class EnumMessage extends jspb.Message {
   getInternalEnum(): EnumMessage.InternalEnumMap[keyof EnumMessage.InternalEnumMap];
-  setInternalEnum(value: EnumMessage.InternalEnumMap[keyof EnumMessage.InternalEnumMap]): void;
+  setInternalEnum(value: EnumMessage.InternalEnumMap[keyof EnumMessage.InternalEnumMap]): EnumMessage;
 
   clearInternalEnumsList(): void;
   getInternalEnumsList(): Array<EnumMessage.InternalEnumMap[keyof EnumMessage.InternalEnumMap]>;
@@ -14,7 +14,7 @@ export class EnumMessage extends jspb.Message {
   addInternalEnums(value: EnumMessage.InternalEnumMap[keyof EnumMessage.InternalEnumMap], index?: number): EnumMessage.InternalEnumMap[keyof EnumMessage.InternalEnumMap];
 
   getExternalEnum(): proto_othercom_external_enum_pb.ExternalEnumMap[keyof proto_othercom_external_enum_pb.ExternalEnumMap];
-  setExternalEnum(value: proto_othercom_external_enum_pb.ExternalEnumMap[keyof proto_othercom_external_enum_pb.ExternalEnumMap]): void;
+  setExternalEnum(value: proto_othercom_external_enum_pb.ExternalEnumMap[keyof proto_othercom_external_enum_pb.ExternalEnumMap]): EnumMessage;
 
   clearExternalEnumsList(): void;
   getExternalEnumsList(): Array<proto_othercom_external_enum_pb.ExternalEnumMap[keyof proto_othercom_external_enum_pb.ExternalEnumMap]>;

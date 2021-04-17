@@ -8,7 +8,7 @@ export class ParentMessageV3 extends jspb.Message {
   hasInternalChildMessage(): boolean;
   clearInternalChildMessage(): void;
   getInternalChildMessage(): ParentMessageV3.InternalChildMessage | undefined;
-  setInternalChildMessage(value?: ParentMessageV3.InternalChildMessage): void;
+  setInternalChildMessage(value?: ParentMessageV3.InternalChildMessage): ParentMessageV3;
 
   clearInternalChildrenList(): void;
   getInternalChildrenList(): Array<ParentMessageV3.InternalChildMessage>;
@@ -18,7 +18,7 @@ export class ParentMessageV3 extends jspb.Message {
   hasExternalChildMessage(): boolean;
   clearExternalChildMessage(): void;
   getExternalChildMessage(): proto_othercom_external_child_message_pb.ExternalChildMessage | undefined;
-  setExternalChildMessage(value?: proto_othercom_external_child_message_pb.ExternalChildMessage): void;
+  setExternalChildMessage(value?: proto_othercom_external_child_message_pb.ExternalChildMessage): ParentMessageV3;
 
   clearExternalChildrenList(): void;
   getExternalChildrenList(): Array<proto_othercom_external_child_message_pb.ExternalChildMessage>;
@@ -45,7 +45,7 @@ export namespace ParentMessageV3 {
 
   export class InternalChildMessage extends jspb.Message {
     getMyString(): string;
-    setMyString(value: string): void;
+    setMyString(value: string): InternalChildMessage;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): InternalChildMessage.AsObject;
