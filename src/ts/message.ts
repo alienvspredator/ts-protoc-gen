@@ -202,7 +202,7 @@ export function printMessage(fileName: string, exportMap: ExportMap, messageDesc
         const fieldObjectName = normaliseFieldObjectName(camelCaseName);
         toObjectType.printIndentedLn(`${fieldObjectName}${canBeUndefined ? "?" : ""}: ${fieldObjectType},`);
         printer.printIndentedLn(`get${withUppercase}(): ${exportType}${canBeUndefined ? " | undefined" : ""};`);
-        printer.printIndentedLn(`set${withUppercase}(value${type === MESSAGE_TYPE ? "?" : ""}: ${exportType}): void;`);
+        printer.printIndentedLn(`set${withUppercase}(value${type === MESSAGE_TYPE ? "?" : ""}: ${exportType}): ${messageName};`);
       }
     }
     printer.printEmptyLn();
